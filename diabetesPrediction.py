@@ -22,7 +22,7 @@ x_normal=(x-np.min(x)) / (np.max(x)-np.min(x))
 
 from sklearn.model_selection import train_test_split
 
-x_train,x_test,y_train,y_test=train_test_split(x_normal,y,test_size=0.20,random_state=1)
+x_train,x_test,y_train,y_test=train_test_split(x_normal,y,test_size=0.20,random_state=0)
 
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -33,7 +33,7 @@ y_pred=knn.predict(x_test)
 
 accuracy=knn.score(x_test,y_test)
 
-# accuracy=%78
+# accuracy=%77
 
 
 
